@@ -6,3 +6,8 @@ file.close()
 #try to update this file and commit the changes to git
 
 
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    pass
