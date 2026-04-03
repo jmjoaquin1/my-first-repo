@@ -22,7 +22,7 @@ exports.handler = async function(event, context) {
     .resize(Math.round(width * 0.5))
     .grayscale() // convert image to black and white
     .sharpen() // enhance edges and improve clarity
-    .toFormat('jpeg')
+    .toFormat('jpeg') // convert image to JPEG format
     .toBuffer();
 
   await S3.putObject({
